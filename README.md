@@ -41,7 +41,7 @@ https://vboehm.net/downloads (look for vb.mi-objects)
    ```bash
    cd source/libs/libsamplerate
    mkdir build && cd build
-   cmake -DLIBSAMPLERATE_EXAMPLES=OFF -DBUILD_TESTING=OFF  -DCMAKE_OSX_ARCHITECTURES="arm64" ..
+   cmake -DLIBSAMPLERATE_EXAMPLES=OFF -DBUILD_TESTING=OFF  -DCMAKE_OSX_ARCHITECTURES="arm64;x86_64" ..
    cmake --build . --config 'Release'
    cd ../../../..
    ```
@@ -70,7 +70,7 @@ You can build on the command line using Makefiles, or you can generate an Xcode 
 * Make: 
 
   ```bash
-  cmake -DCMAKE_OSX_ARCHITECTURES="arm64" ..
+  cmake -DCMAKE_OSX_ARCHITECTURES="arm64;x86_64" ..
   cmake --build . --config 'Release'
   ```
 
