@@ -6,11 +6,13 @@ Many thanks to Émilie Gillet for making the source code available!
 https://github.com/pichenettes/eurorack
 
 **Please note, this is not a release of 'mutable instruments'!**
-**This is for building arm64 version**
+
 Volker Böhm, 2019
 https://vboehm.net
 
+**This is for building arm64 version**
 
+Hongshuo Fan, 2025
 
 Compiled versions for macOS can be found here:
 
