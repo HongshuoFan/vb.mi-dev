@@ -6,7 +6,7 @@ Many thanks to Émilie Gillet for making the source code available!
 https://github.com/pichenettes/eurorack
 
 **Please note, this is not a release of 'mutable instruments'!**
-
+**This is for building arm64 version**
 Volker Böhm, 2019
 https://vboehm.net
 
@@ -39,7 +39,7 @@ https://vboehm.net/downloads (look for vb.mi-objects)
    ```bash
    cd source/libs/libsamplerate
    mkdir build && cd build
-   cmake -DLIBSAMPLERATE_EXAMPLES=OFF -DBUILD_TESTING=OFF ..
+   cmake -DLIBSAMPLERATE_EXAMPLES=OFF -DBUILD_TESTING=OFF  -DCMAKE_OSX_ARCHITECTURES="arm64" ..
    cmake --build . --config 'Release'
    cd ../../../..
    ```
@@ -68,7 +68,7 @@ You can build on the command line using Makefiles, or you can generate an Xcode 
 * Make: 
 
   ```bash
-  cmake ..
+  cmake -DCMAKE_OSX_ARCHITECTURES="arm64" ..
   cmake --build . --config 'Release'
   ```
 
